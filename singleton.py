@@ -1,4 +1,8 @@
+
+
 class Singleton:
+    """ You want to make sure that a class has only one instance throughout the entire program.
+    Example: database connection pool, logging service, configuration manager."""
 
     _instance = None
 
@@ -12,5 +16,5 @@ class Singleton:
 a = Singleton()
 b = Singleton()
 
-print(a == b)
+print(a is b)
 
